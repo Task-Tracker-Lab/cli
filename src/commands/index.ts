@@ -1,4 +1,4 @@
-export { aiCommand } from './ai.js';
+export { aiCommand } from './ai/index.js';
 export { initCommand } from './init.js';
 export { stopCommand } from './stop.js';
 export { checkCommand } from './check.js';
