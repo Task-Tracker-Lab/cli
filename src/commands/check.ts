@@ -1,9 +1,9 @@
 import { Command } from 'commander';
 import { logger } from '../utils/logger.js';
 import { handleError } from '../utils/handle-error.js';
+import { BaseOptions } from '../types/environment.js';
 
-interface CheckOptions {
-    env: 'dev' | 'stage' | 'prod';
+interface CheckOptions extends BaseOptions {
     all?: boolean;
     fix?: boolean;
     strict?: boolean;
