@@ -1,9 +1,9 @@
 import { Command } from 'commander';
 import { logger } from '../utils/logger.js';
 import { handleError } from '../utils/handle-error.js';
+import { BaseOptions } from '../types/environment.js';
 
-interface RestartOptions {
-    env: 'dev' | 'stage' | 'prod';
+interface RestartOptions extends BaseOptions {
     all?: boolean;
     strategy: 'recreate' | 'rolling';
     failedOnly?: boolean;

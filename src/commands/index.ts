@@ -1,6 +1,14 @@
+export { aiCommand } from './ai.js';
 export { initCommand } from './init.js';
 export { stopCommand } from './stop.js';
 export { checkCommand } from './check.js';
+export { cleanCommand } from './clean.js';
 export { startCommand } from './start.js';
 export { statusCommand } from './status.js';
+export { backupCommand } from './backup.js';
+export { configCommand } from './config.js';
+export { updateCommand } from './update.js';
+export { reportCommand } from './report.js';
 export { restartCommand } from './restart.js';
+export { restoreCommand } from './restore.js';
+export { troubleshootCommand } from './troubleshoot.js';

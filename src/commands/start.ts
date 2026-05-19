@@ -1,9 +1,9 @@
 import { Command } from 'commander';
 import { logger } from '../utils/logger.js';
 import { handleError } from '../utils/handle-error.js';
+import { BaseOptions } from '../types/environment.js';
 
-interface StartOptions {
-    env: 'dev' | 'stage' | 'prod';
+interface StartOptions extends BaseOptions {
     all?: boolean;
     withDeps?: boolean;
     build?: boolean;
