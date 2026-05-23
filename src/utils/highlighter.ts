@@ -6,4 +6,5 @@ export const highlighter = {
     info: chalk.cyan,
     success: chalk.green,
     muted: chalk.dim,
+    reset: chalk.reset,
 };
